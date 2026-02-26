@@ -1,0 +1,99 @@
+/* กำหนดฟอนต์และพื้นหลัง */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; 
+    color: #333;
+}
+
+/* ส่วนหัวและเมนู */
+header {
+    background-color: #4A90E2; 
+    color: white; /* เติม ; เรียบร้อย */
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white; 
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s; /* ทำให้เวลาเปลี่ยนสีดูนุ่มนวลขึ้น */
+}
+
+nav a:hover {
+    color: #ffeb3b; /* เปลี่ยนเป็นสีเหลืองเวลาชี้ */
+    text-decoration: underline;
+}
+
+/* ส่วนเนื้อหา */
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white; /* เติม ; เรียบร้อย */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* ปรับเงาให้ฟุ้งสวยขึ้น */
+}
+
+/* รูปโปรไฟล์หน้าแรก */
+.profile-img {
+    width: 180px; 
+    height: auto; 
+    float: left; 
+    margin-right: 20px; 
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 3px solid #4A90E2;
+}
+
+/* Clearfix ป้องกันเนื้อหาไหล */
+.content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* --- ส่วนของหน้า งานอดิเรก (Hobby) --- */
+.hobby-gallery {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    margin-bottom: 20px;
+}
+
+.hobby-item {
+    width: 200px; 
+    text-align: center;
+    transition: transform 0.3s; /* เพิ่ม Animation เวลาเอาเมาส์ชี้ */
+}
+
+.hobby-item:hover {
+    transform: scale(1.05); /* ขยายใหญ่ขึ้นนิดหน่อยเวลาชี้ */
+}
+
+.hobby-item img {
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    border: 2px solid #ddd;
+}
+
+/* ส่วนท้าย */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #ffffff;
+    background-color: #333; /* เปลี่ยนสีพื้นหลัง Footer ให้เข้มดูตัดกับเนื้อหา */
+    margin-top: 30px;
+}
